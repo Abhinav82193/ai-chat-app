@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ai-chat-app
+
+server:
+  port: 8080
+
+openai:
+  api-key: ${OPENAI_API_KEY:}
+  model: gpt-4o-mini
+
+gemini:
+  api-key: ${GEMINI_API_KEY:}
+  model: gemini-1.5-flash
+
+logging:
+  level:
+    com.abhi.ai_chat: DEBUG
